@@ -1,3 +1,4 @@
+BTrees
 datrie
 Cython
 git+https://github.com/poke1024/DAWG.git@fix-cython-py3

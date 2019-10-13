@@ -14,6 +14,7 @@ python test2.py
 python test3.py
 python test4.py
 python test5.py
+python test6.py
 ```
 
 ## Addtional Prerequsits
@@ -42,6 +43,8 @@ pip install -r requirements.txt
   [`test4.py`](./text4.py)
 * Use a [Trie](https://github.com/pytries/datrie).
   [`test5.py`](./text5.py)
+* Use a [BTree](https://github.com/zopefoundation/BTrees).
+  [`test6.py`](./text6.py)
 * `NumPy` load then process
 
 ## Results
@@ -66,3 +69,10 @@ pip install -r requirements.txt
 * RAM: 19,744 MB
 * Retrival (hits): 559 k / sec
 * Retrival (misses): 3482 k / sec
+
+[`test6.py`](./text6.py)
+
+* Load time: 0:02:18.024301
+* RAM: 18,689 MB
+* Retrival (hits): 238 k / sec
+* Retrival (misses): 1244 k / sec
