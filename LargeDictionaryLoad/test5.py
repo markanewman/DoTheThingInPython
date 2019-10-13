@@ -50,7 +50,7 @@ print('Timeing samples (hits)...')
 t1 = dt.utcnow()
 for key in hits:
     if key in mydict:
-        value = values[mydict[key]]
+        value = mydict[key]
     else:
         raise Exception('Could not find expected key: {key}'.format(key = key))
 t2 = dt.utcnow() - t1
