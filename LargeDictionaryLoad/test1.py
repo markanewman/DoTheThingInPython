@@ -10,8 +10,8 @@ from datetime import datetime as dt
 ### edit me - start
 key_column = 1
 value_column = 2
-source_file_name = 'd:/test/source_1.csv'
-sample_file_name = 'd:/test/sample_1.csv'
+source_file_name = 'd:/test/source.csv'
+sample_file_name = 'd:/test/sample.csv'
 ### edit me - end
 
 source_file_name = pathlib.Path(source_file_name)

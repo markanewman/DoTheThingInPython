@@ -1,7 +1,8 @@
 # Large Dictionary Load
 
 Simple tests on how to make a dictionary from a CSV.
-The overall CSV file is ~5gb and the keys are english words.
+Two tests were conducted: one data set had a fair bit of overlap in terms of prefixed keys, and the other was very unique in those terms.
+The overall CSV files are ~5gb and the keys are english words.
 The columns for key and value are known.
 There is some level of concern as to access speed once the data structure is loaded, but the primary concern is initial load time and overall memory consumption.
 Tests were run on an i7-6700K @ 4.00Ghz with 32Gb RAM running Win10 under Python 3.7.3 directly from `cmd.exe`.

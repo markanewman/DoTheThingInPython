@@ -6,8 +6,8 @@ from datetime import datetime as dt
 ### edit me - start
 sample_size = .05
 key_column = 1
-source_file_name = 'd:/test/source_1.csv'
-sample_file_name = 'd:/test/sample_1.csv'
+source_file_name = 'd:/test/source.csv'
+sample_file_name = 'd:/test/sample.csv'
 ### edit me - end
 
 random.seed(0)
