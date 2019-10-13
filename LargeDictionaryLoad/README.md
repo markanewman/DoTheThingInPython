@@ -12,6 +12,8 @@ python collect_samples.py
 python test1.py
 python test2.py
 python test3.py
+python test4.py
+python test5.py
 ```
 
 ## Addtional Prerequsits
@@ -36,7 +38,10 @@ pip install -r requirements.txt
   [`test2.py`](./text2.py)
 * Read the full file then load.
   [`test3.py`](./text3.py)
-* Use a [`DAWG`](https://github.com/pytries/DAWG)
+* Use a [`DAWG`](https://github.com/pytries/DAWG).
+  [`test4.py`](./text4.py)
+* Use a [Trie](https://github.com/pytries/datrie).
+  [`test5.py`](./text5.py)
 * `NumPy` load then process
 
 ## Results
