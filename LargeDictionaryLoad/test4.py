@@ -20,13 +20,15 @@ sample_file_name = pathlib.Path(sample_file_name)
 
 print('Loading dictionary...')
 t1 = dt.utcnow()
+def gen_keys(source_file_name):
+    i = 0
+    with open(source_file_name, 'r', encoding = 'utf-8', newline = '') as source_file:
+        for line in source_file:
+            yield line.strip().split(',')[key_column], i
+            i = i + 1
+mydict = dawg.IntDAWG(gen_keys(source_file_name))
 with open(source_file_name, 'r', encoding = 'utf-8', newline = '') as source_file:
-    tokens = [line.strip().split(',') for line in source_file]
-keys = [(pair[0][key_column], pair[1]) for pair in zip(tokens, range(len(tokens)))]
-values = [token[value_column] for token in tokens]
-del(tokens)
-mydict = dawg.IntDAWG(keys)
-del(keys)
+    values = [line.strip().split(',')[value_column] for line in source_file.readlines()]
 print(dt.utcnow() - t1)
 
 gc.collect()

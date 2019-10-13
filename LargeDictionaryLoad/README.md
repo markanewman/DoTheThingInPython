@@ -70,6 +70,10 @@ pip install -r requirements.txt
 * Retrival (hits): 559 k / sec
 * Retrival (misses): 3482 k / sec
 
+[`test4.py`](./text4.py)
+
+* Unable to build dictionary
+
 [`test5.py`](./text5.py)
 
 * Load time: 0:03:52.338609
