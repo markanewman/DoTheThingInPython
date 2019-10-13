@@ -1,4 +1,4 @@
-# Line by line load into `mydict = {}`
+# Load as a generator into `mydict = dict()`
 
 import gc
 import os
@@ -20,12 +20,14 @@ mydict = {}
 
 print('Loading dictionary...')
 t1 = dt.utcnow()
-with open(source_file_name, 'r', encoding = 'utf-8', newline = '') as source_file:            
-    for line in source_file:                
-        tokens = line.strip().split(',')
-        key = tokens[key_column]
-        value = tokens[value_column]
-        mydict[key] = value
+def gen(source_file_name):
+    with open(source_file_name, 'r', encoding = 'utf-8', newline = '') as source_file:            
+        for line in source_file:                
+            tokens = line.strip().split(',')
+            key = tokens[key_column]
+            value = tokens[value_column]
+            yield key, value
+mydict = dict(gen(source_file_name))
 print(dt.utcnow() - t1)
 
 gc.collect()
