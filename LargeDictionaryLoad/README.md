@@ -52,39 +52,72 @@ pip install -r requirements.txt
 
 [`test1.py`](./test1.py)
 
-* Load time: 0:01:28.655617
-* RAM: 19,736 MB
-* Retrival (hits): 1177 k / sec
-* Retrival (misses): 3861 k / sec
+* Sample A
+  * Load time: 0:01:28.655617
+  * RAM: 19,736 MB
+  * Retrival (hits): 1177 k / sec
+  * Retrival (misses): 3861 k / sec
+* Sample B
+  * Load time: 0:01:58.719266
+  * RAM: 22,070 MB
+  * Retrival (hits): 1153 k / sec
+  * Retrival (misses): 3694 k / sec
 
 [`test2.py`](./test2.py)
 
-* Load time: 0:01:23.504762
-* RAM: 19,737 MB
-* Retrival (hits): 1260 k / sec
-* Retrival (misses): 4288 k / sec
+* Sample A
+  * Load time: 0:01:23.504762
+  * RAM: 19,737 MB
+  * Retrival (hits): 1260 k / sec
+  * Retrival (misses): 4288 k / sec
+* Sample B
+  * Load time: 0:01:51.759471
+  * RAM: 22,070 MB
+  * Retrival (hits): 1187 k / sec
+  * Retrival (misses): 3704 k / sec
 
 [`test3.py`](./test3.py)
 
-* Load time: 0:01:47.991263
-* RAM: 19,744 MB
-* Retrival (hits): 559 k / sec
-* Retrival (misses): 3482 k / sec
+* Sample A
+  * Load time: 0:01:47.991263
+  * RAM: 19,744 MB
+  * Retrival (hits): 559 k / sec
+  * Retrival (misses): 3482 k / sec
+* Sample B
+  * Load time: 0:02:41.541112
+  * RAM: 22,082 MB
+  * Retrival (hits): 405 k / sec
+  * Retrival (misses): 3288 k / sec
 
 [`test4.py`](./test4.py)
 
-* Unable to build dictionary
+* Sample A
+  * dawg.Error: Can't build dictionary - File "src\dawg.pyx", line 78, in dawg.DAWG._build_from_iterable
+* Sample B
+  * dawg.Error: Can't build dictionary - File "src\dawg.pyx", line 78, in dawg.DAWG._build_from_iterable
 
 [`test5.py`](./test5.py)
 
-* Load time: 0:03:52.338609
-* RAM: 8,399 MB
-* Retrival (hits): 244 k / sec
-* Retrival (misses): 3129 k / sec
+* Sample A
+  * Load time: 0:03:52.338609
+  * RAM: 8,399 MB
+  * Retrival (hits): 244 k / sec
+  * Retrival (misses): 3129 k / sec
+* Sample B
+  * Load time: 0:06:06.275032
+  * RAM: 9,765 MB
+  * Retrival (hits): 230 k / sec
+  * Retrival (misses): 806 k / sec
 
 [`test6.py`](./test6.py)
 
-* Load time: 0:02:18.024301
-* RAM: 18,689 MB
-* Retrival (hits): 238 k / sec
-* Retrival (misses): 1244 k / sec
+* Sample A
+  * Load time: 0:02:18.024301
+  * RAM: 18,689 MB
+  * Retrival (hits): 238 k / sec
+  * Retrival (misses): 1244 k / sec
+* Sample B
+  * Load time: 0:37:18.274181
+  * RAM: 21,622 MB
+  * Retrival (hits): 34 k / sec
+  * Retrival (misses): 67 k / sec
