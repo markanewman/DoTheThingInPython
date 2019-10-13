@@ -1,5 +1,5 @@
 BTrees
-datrie
+marisa-trie
 Cython
 git+https://github.com/poke1024/DAWG.git@fix-cython-py3
 psutil

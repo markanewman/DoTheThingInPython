@@ -41,7 +41,7 @@ pip install -r requirements.txt
   [`test3.py`](./text3.py)
 * Use a [`DAWG`](https://github.com/pytries/DAWG).
   [`test4.py`](./text4.py)
-* Use a [Trie](https://github.com/pytries/datrie).
+* Use a [Trie](https://github.com/pytries/marisa-trie).
   [`test5.py`](./text5.py)
 * Use a [BTree](https://github.com/zopefoundation/BTrees).
   [`test6.py`](./text6.py)
@@ -69,6 +69,13 @@ pip install -r requirements.txt
 * RAM: 19,744 MB
 * Retrival (hits): 559 k / sec
 * Retrival (misses): 3482 k / sec
+
+[`test5.py`](./text5.py)
+
+* Load time: 0:03:52.338609
+* RAM: 8,399 MB
+* Retrival (hits): 244 k / sec
+* Retrival (misses): 3129 k / sec
 
 [`test6.py`](./text6.py)
 

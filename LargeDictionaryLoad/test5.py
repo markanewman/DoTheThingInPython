@@ -1,8 +1,8 @@
-# Use a [Trie](https://github.com/pytries/datrie)
+# Use a [Trie](https://github.com/pytries/marisa-trie)
 
-import datrie
 import gc
 import os
+import marisa_trie
 import pathlib
 import psutil
 import string
@@ -21,13 +21,13 @@ sample_file_name = pathlib.Path(sample_file_name)
 
 print('Loading dictionary...')
 t1 = dt.utcnow()
-mydict = datrie.Trie(string.printable)
-with open(source_file_name, 'r', encoding = 'utf-8', newline = '') as source_file:            
-    for line in source_file:                
-        tokens = line.strip().split(',')
-        key = tokens[key_column]
-        value = tokens[value_column]
-        mydict[key] = value
+def gen_keys(source_file_name):
+    with open(source_file_name, 'r', encoding = 'utf-8', newline = '') as source_file:
+        for line in source_file:
+            yield line.strip().split(',')[key_column]
+mydict = marisa_trie.Trie(gen_keys(source_file_name))
+with open(source_file_name, 'r', encoding = 'utf-8', newline = '') as source_file:
+    values = [line.strip().split(',')[value_column] for line in source_file.readlines()]
 print(dt.utcnow() - t1)
 
 gc.collect()
@@ -50,7 +50,7 @@ print('Timeing samples (hits)...')
 t1 = dt.utcnow()
 for key in hits:
     if key in mydict:
-        value = mydict[key]
+        value = values[mydict[key]]
     else:
         raise Exception('Could not find expected key: {key}'.format(key = key))
 t2 = dt.utcnow() - t1
