@@ -35,54 +35,54 @@ pip install -r requirements.txt
 ## Tests
 
 * Line by line load into `mydict = {}`.
-  [`test1.py`](./text1.py)
+  [`test1.py`](./test1.py)
 * Load as a generator into `mydict = dict()`.
-  [`test2.py`](./text2.py)
+  [`test2.py`](./test2.py)
 * Read the full file then load.
-  [`test3.py`](./text3.py)
+  [`test3.py`](./test3.py)
 * Use a [`DAWG`](https://github.com/pytries/DAWG).
-  [`test4.py`](./text4.py)
+  [`test4.py`](./test4.py)
 * Use a [Trie](https://github.com/pytries/marisa-trie).
-  [`test5.py`](./text5.py)
+  [`test5.py`](./test5.py)
 * Use a [BTree](https://github.com/zopefoundation/BTrees).
-  [`test6.py`](./text6.py)
+  [`test6.py`](./test6.py)
 * `NumPy` load then process
 
 ## Results
 
-[`test1.py`](./text1.py)
+[`test1.py`](./test1.py)
 
 * Load time: 0:01:28.655617
 * RAM: 19,736 MB
 * Retrival (hits): 1177 k / sec
 * Retrival (misses): 3861 k / sec
 
-[`test2.py`](./text2.py)
+[`test2.py`](./test2.py)
 
 * Load time: 0:01:23.504762
 * RAM: 19,737 MB
 * Retrival (hits): 1260 k / sec
 * Retrival (misses): 4288 k / sec
 
-[`test3.py`](./text3.py)
+[`test3.py`](./test3.py)
 
 * Load time: 0:01:47.991263
 * RAM: 19,744 MB
 * Retrival (hits): 559 k / sec
 * Retrival (misses): 3482 k / sec
 
-[`test4.py`](./text4.py)
+[`test4.py`](./test4.py)
 
 * Unable to build dictionary
 
-[`test5.py`](./text5.py)
+[`test5.py`](./test5.py)
 
 * Load time: 0:03:52.338609
 * RAM: 8,399 MB
 * Retrival (hits): 244 k / sec
 * Retrival (misses): 3129 k / sec
 
-[`test6.py`](./text6.py)
+[`test6.py`](./test6.py)
 
 * Load time: 0:02:18.024301
 * RAM: 18,689 MB
